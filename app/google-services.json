@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "819549286531",
+    "project_id": "uptm-housing-hub",
+    "storage_bucket": "uptm-housing-hub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819549286531:android:aa9c5019d16a5915da6bb6",
+        "android_client_info": {
+          "package_name": "com.example.uptmhousinghub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcqDi8mYkqcY15FA2BzExlDmib2z6lGGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

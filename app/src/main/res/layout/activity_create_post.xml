@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e1e2d"
+    tools:context=".CreatePostActivity">
+
+    <EditText
+        android:id="@+id/eTDeposit"
+        android:layout_width="273dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="Deposit"
+        android:inputType="number"
+        android:textColor="#cfcfe8"
+        android:textColorHint="#B5CFCFE8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTTitle" />
+
+    <EditText
+        android:id="@+id/eTMonthly"
+        android:layout_width="273dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Monthly Payment"
+        android:inputType="number"
+        android:textColor="#cfcfe8"
+        android:textColorHint="#B5CFCFE8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTDesc" />
+
+    <EditText
+        android:id="@+id/eTFacilities"
+        android:layout_width="270dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Available Facilities"
+        android:inputType="text"
+        android:textColor="#cfcfe8"
+        android:textColorHint="#B5CFCFE8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTFurnished" />
+
+    <EditText
+        android:id="@+id/eTTitle"
+        android:layout_width="279dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="text"
+        android:textColor="#cfcfe8"
+        android:textColorHint="#B5CFCFE8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Create Post"
+        android:textColor="#cfcfe8"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/eTFurnished"
+        android:layout_width="273dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:hint="Furnished Items"
+        android:inputType="text"
+        android:textColor="#cfcfe8"
+        android:textColorHint="#B5CFCFE8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTDesc" />
+
+    <EditText
+        android:id="@+id/eTNumber"
+        android:layout_width="270dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Number of people"
+        android:inputType="text"
+        android:textColor="#cfcfe8"
+        android:textColorHint="#B5CFCFE8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTFurnished" />
+
+    <EditText
+        android:id="@+id/eTDesc"
+        android:layout_width="273dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Descriptions"
+        android:inputType="text"
+        android:textColor="#cfcfe8"
+        android:textColorHint="#B5CFCFE8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTTitle" />
+
+    <Button
+        android:id="@+id/btnSubmitCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTNumber" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="233dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTNumber">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="#cfcfe8" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="#cfcfe8" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
